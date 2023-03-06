@@ -56,6 +56,11 @@ document.getElementById("calculator").addEventListener("click", (e) => {
       setTimeout(() => {
         failed.classList.add("hidden");
       }, 5000);
+
+      if(confirmInput === ''){
+        failed.textContent = 'Please type your pin number!'
+        return
+      }
     }
    
   });
