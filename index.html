@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pin Matcher</title>
+  </head>
+  <body class="bg-slate-300 p-4 flex justify-center items-center h-screen">
+    <div class="w-full container mx-auto max-w-xl">
+      <div 
+      class="w-full container mx-auto grid grid-cols-2 gap-4 max-w-xl"
+    >
+      <!-- =======left==== -->
+      <div class="bg-slate-500 p-3 rounded-md shadow-md shadow-slate-400">
+        <input id="pin__input" type="text" class="w-full  border-none outline-none bg-slate-400 rounded-sm py-3 px-2 text-white text-2xl text-center"/>
+        <div id="generate__pin__btn" class="w-[6rem] h-[6rem] bg-slate-800 rounded-full text-white mx-auto mt-[8rem]
+        flex justify-center items-center p-2 text-center cursor-pointer font-semibold select-none ring-2">Generate pin</div>
+      </div>
+
+      <!-- =======right==== -->
+      <div id="calculator" class="bg-slate-500 p-3 rounded-md shadow-md shadow-slate-400">
+        <input id="confirm__input" type="text" class="w-full border-none outline-none bg-slate-400 rounded-sm py-3 px-2 text-white text-2xl"/>
+        <div class="grid gap-4 mt-10 grid-cols-3 mx-auto">
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">7</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">8</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">9</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">4</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">5</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">6</div>
+          <div class="bg-slate-700 text-center text-white py- rounded-sm hover:bg-slate-800 font-semibold">1</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">2</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">3</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold"><</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">0</div>
+          <div class="bg-slate-700 text-center text-white py-2 rounded-sm hover:bg-slate-800 font-semibold">c</div>
+        </div>
+        <button id="submit__btn" class="w-full bg-slate-900 mt-4 py-2 text-white font-semibold text-lg rounded-sm">Submit</button>
+      </div>
+    </div>
+    <p id="success" class="my-5 bg-green-200/60 text-green-700 p-1 text-center text-lg hidden">✔  Successfully match your pin</p>
+
+    <p id="failed" class="my-5 bg-rose-200/60 text-rose-700 p-1 text-center text-lg hidden">❌ Pin don't match ! please try again</p>
+
+    </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
